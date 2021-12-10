@@ -16,6 +16,7 @@ const Auth = require('./routes/auth');
 const Users = require('./routes/user');
 // const Country = require('./routes/country');
 const Product = require('./routes/product');
+const Supplier = require('./routes/supplier');
 
 //Middlewares 
 const {verificaToken} = require('./app/Middlewares/Auth');
@@ -40,6 +41,7 @@ app.use(`${prefixRoutes}/auth`,Auth);
 app.use(`${prefixRoutes}/user`,Users);
 // app.use(`${prefixRoutes}/country`,Country);
 app.use(`${prefixRoutes}/product`,Product);
+app.use(`${prefixRoutes}/supplier`,Supplier);
 
 
 module.exports = app;

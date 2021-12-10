@@ -45,6 +45,8 @@ async function Save(req, res) {
 	let registro = new Product();
 	registro.name = req.body.name;
 	registro.price = req.body.price;
+	registro.description = req.body.description;
+	registro.supplier = req.body.supplier;
 	registro.actualStock = req.body.actualStock;
 	registro.photo = req.body.photo;
 
